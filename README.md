@@ -22,9 +22,13 @@ Key consideration for designing the system
 
 #### Data pipeline
 Step 1: get data, unzip files
+- use AWS Athena to extract all zipped files and save into seperate tables for Play, Down, Search
 Step 2: investigate into the data, transform unstructured data to structured
-Step 3: preprocess, feature engineering 
-Step 4: 
+- load csv to python, clean the data slightly and save to seperate csv 
+- challenge: large files for play, cannot be load into python, or sql server
+- solution: python script to write into table line by line 
+Step 3: preprocess, feature engineering
+Step 4: build model
 
 #### Collaborative filtering
 utility matrix for song frequency
@@ -36,6 +40,10 @@ Key learnings：
 2. troubleshoot noisy dataset and extract useful information 
 3. design the recommender system to maximize efficiency and effectiveness; also for scalability consideration
 
+##### Unsuccessful experiments log:
+1. preprocessing: download csv to local (expensive to do sql manupilation on AWS and also needs cleaning, potentially can be done in SQL)
+2. preprocessing: setup microsoft sql management platform: very slow and confusing syntax 
+3. model: utility matrix with a) plain play frequency; b) log(frequency); c) log(frequency)+ int(bool download) 
 
 
 
