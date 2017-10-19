@@ -1,11 +1,12 @@
-Hybrid Music Recommender System using Apache Spark and Python
+## Hybrid Music Recommender System using Apache Spark and Python
+### Author: Yan Zhu
 
-Description
+#### Description
 
 A recommender system that will recommend new songss to a user based on their listening history. Suggesting different songs or musical artists to a user is important to many music streaming services, such as Pandora and Spotify. In addition, this type of recommender system could also be used as a means of suggesting TV shows or movies to a user (e.g., Netflix).
 
 
-##### Project timeline: 
+#### Project timeline: 
 Sep.24 2017: design the system (modified as the project goes)
 Sep.25 2017: design the data pipeline
 Sep.31 2017: finished data cleaning
