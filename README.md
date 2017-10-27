@@ -23,11 +23,14 @@ Key consideration for designing the system
 #### Data pipeline
 Step 1: get data, unzip files
 - use AWS Athena to extract all zipped files and save into seperate tables for Play, Down, Search
+
 Step 2: investigate into the data, transform unstructured data to structured
 - load csv to python, clean the data slightly and save to seperate csv 
 - challenge: large files for play, cannot be load into python, or sql server
 - solution: python script to write into table line by line 
+
 Step 3: preprocess, feature engineering
+
 Step 4: build model
 
 #### Collaborative filtering
